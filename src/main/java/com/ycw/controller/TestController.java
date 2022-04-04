@@ -19,7 +19,7 @@ public class TestController {
     // @RequestMapping(value = "/user/1", method = RequestMethod.DELETE)
     @GetMapping("/hello")
     public String hello() {
-        return "Hello World!";
+        return "Hello World4!";
     }
     @PostMapping("/hello/post")
     public String helloPost(String name) {
