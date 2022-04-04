@@ -1,11 +1,12 @@
-package com.ycw.project_management;
+package com.ycw.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
-
+@ComponentScan("com.ycw")
 @SpringBootApplication
 public class ProjectManagementApplication {
     private static final Logger LOG = LoggerFactory.getLogger(ProjectManagementApplication.class);//打印出日制信息所在的类
@@ -16,5 +17,4 @@ public class ProjectManagementApplication {
         LOG.info("启动成功！！");
         LOG.info("地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
     }
-
 }
